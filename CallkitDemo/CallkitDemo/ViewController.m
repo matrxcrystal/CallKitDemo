@@ -43,6 +43,7 @@
 /// 1. CallKit speaker button not work
 /// 2. options set success
 - (void)configAudiosession1 {
+    NSLog(@"using configAudiosession1");
     AVAudioSession *session = [AVAudioSession sharedInstance];
     NSError *error = nil;
     AVAudioSessionCategory category = AVAudioSessionCategoryPlayAndRecord;
@@ -63,6 +64,7 @@
 /// 1. CallKit speaker button work well
 /// 2. options set failed，AVAudioSessionCategoryOptionAllowBluetooth is invalid
 - (void)configAudiosession2 {
+    NSLog(@"using configAudiosession2");
     AVAudioSession *session = [AVAudioSession sharedInstance];
     NSError *error = nil;
     AVAudioSessionCategory category = AVAudioSessionCategoryPlayAndRecord;
@@ -86,6 +88,7 @@
 /// 1. CallKit speaker button not work
 /// 2. options set success
 - (void)configAudiosession3 {
+    NSLog(@"using configAudiosession3");
     AVAudioSession *session = [AVAudioSession sharedInstance];
     NSError *error = nil;
     AVAudioSessionCategory category = AVAudioSessionCategoryPlayAndRecord;
